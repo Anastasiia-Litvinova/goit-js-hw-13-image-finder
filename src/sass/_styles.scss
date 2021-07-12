@@ -1,0 +1,131 @@
+:root {
+  --background: #77e0216c;
+  --text-and-border: #127a1b;
+  --main-font: 'URW Chancery L', cursive;
+}
+
+body {
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
+  background-color: var(--background);
+}
+
+.wrapper {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.header {
+  font-size: 34px;
+  font-weight: 900;
+  font-style: italic;
+
+  font-family: var(--main-font);
+  color: var(--text-and-border);
+  text-align: center;
+  margin: 25px 0;
+}
+
+.search-form {
+  margin: 0 auto;
+  width: 35vw;
+
+  & > input {
+    &::placeholder {
+      color: var(--text-and-border);
+      text-align: center;
+    }
+
+    border: var(--text-and-border) solid 2px;
+    border-radius: 30px;
+
+    box-shadow: 4px 4px 4px;
+    width: 35vw;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    color: var(--text-and-border);
+
+    outline: none;
+
+    &,
+    textarea {
+      background-color: var(--background);
+    }
+  }
+}
+
+.gallery {
+  list-style: none;
+  margin: 40px 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  &-item {
+    width: 25vw;
+    margin-bottom: 10px;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.photo-card {
+  display: flex;
+  height: fit-content;
+  flex-wrap: wrap;
+  padding: 15px;
+  box-shadow: 4px 4px 4px #0b441896;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+
+  &-item {
+    display: flex;
+    // align-items: center;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+
+    color: #0a3f16;
+    font-family: var(--main-font);
+    font-size: 15px;
+    font-weight: 800;
+  }
+}
+
+.button {
+  &.is-hidden {
+    display: none;
+  }
+
+  margin: 0 auto;
+  display: block;
+
+  background-color: var(--background);
+  color: var(--text-and-border);
+  width: 250px;
+  height: 62px;
+  font-size: 32px;
+  font-style: italic;
+  font-weight: 400;
+
+  border-radius: 20px;
+  border: solid 2px;
+  box-shadow: 4px 4px 4px;
+}
+
+.material-icons {
+  margin-right: 5px;
+  color: var(--text-and-border);
+}
